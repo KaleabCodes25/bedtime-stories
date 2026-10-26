@@ -20,11 +20,16 @@ public class BedTimeStories {
             default -> System.out.println("Please type the specified options!");
         }
         try {
-
             BufferedReader bufferedReader = new BufferedReader(new FileReader(answer));
+
+            while (bufferedReader.readLine() != null){
+                String tokens = bufferedReader.readLine();
+                System.out.println(tokens);
+            }
         } catch (Exception e) {
             System.out.println("Something went wrong, check again");
         }
+
 
 
     }
