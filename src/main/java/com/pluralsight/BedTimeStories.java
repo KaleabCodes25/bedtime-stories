@@ -22,8 +22,10 @@ public class BedTimeStories {
         try {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(answer));
             String line;
+            int counter = 1;
             while ((line = bufferedReader.readLine()) != null){
-                System.out.println(line);
+                System.out.println(counter + ". " + line);
+                counter++;
             }
             bufferedReader.close();
         } catch (Exception e) {
